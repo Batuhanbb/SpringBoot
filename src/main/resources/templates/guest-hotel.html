@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Guests</title>
+</head>
+<body>
+<h1>Guests</h1>
+<table>
+    <tr th:each="guests:${guests}">
+        <td th:text="${guests.firstName}">First Name</td>
+    </tr>
+</table>
+</body>
+</html>
